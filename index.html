@@ -9,12 +9,14 @@
             font-family: Arial, sans-serif; 
             margin: 0;
             padding: 0;
-            height: 100vh; /* Full height */
+            height: 100vh;
             display: flex;
-            justify-content: center; /* Horizontally center */
-            align-items: center; /* Vertically center */
+            justify-content: center;
+            align-items: center;
             text-align: center; 
-            background-color: #f5f5f5;
+            background: url('https://your-image-link.com/christmas-background.jpg') no-repeat center center fixed;
+            background-size: cover; /* Makes the background image cover the whole screen */
+            color: #fff; /* White text color for contrast on dark backgrounds */
         }
         #question-container { 
             display: none; 
@@ -24,17 +26,25 @@
             padding: 10px 20px; 
             font-size: 16px; 
             margin-top: 20px;
+            background-color: #ff4b5c; /* Red button color for Christmas */
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #start-btn:hover, #next-btn:hover {
+            background-color: #ff1f3a; /* Darker red for hover effect */
         }
         #question {
-            font-size: 2.5em; /* Adjusted to make the question larger */
-            font-weight: bold; /* Makes question text bold */
+            font-size: 2.5em; /* Larger text for questions */
+            font-weight: bold; /* Bold text */
             margin: 30px 0;
         }
     </style>
 </head>
 <body>
     <div>
-        <h1>Family Quiz</h1>
+        <h1>Family Christmas Quiz</h1>
         <button id="start-btn">Start Quiz</button>
         <div id="question-container">
             <div id="question"></div>
@@ -44,4 +54,3 @@
     <script src="quiz.js"></script>
 </body>
 </html>
-
