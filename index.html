@@ -13,27 +13,22 @@ body {
     padding-top: 200px;
 }
 
-h1 {
-    font-size: 2.5em; /* Increases the size of the title */
-    max-width: 480px;
+h1, #question-container {
+    max-width: 480px; /* Adjusted width for tighter fit */
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 10px; /* Nudges content inward to prevent left overlap */
 }
 
-#question-container {
-    max-width: 480px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin-left: 10px;
-    display: none;
+#question-container { 
+    display: none; 
+    margin-top: 20px;
 }
 
 #start-btn, #next-btn { 
     padding: 8px 16px; 
-    font-size: 16px; /* Slightly larger button text */
+    font-size: 14px; 
     margin-top: 15px;
     background-color: #ff4b5c;
     border: none;
@@ -47,7 +42,7 @@ h1 {
 }
 
 #question {
-    font-size: 2.2em; /* Larger font size for questions */
+    font-size: 1.8em;
     font-weight: bold;
     margin: 20px 0;
 }
