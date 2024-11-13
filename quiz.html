@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Quiz</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center; /* Vertically center */
+            text-align: center; 
+            background-color: #f5f5f5;
+        }
+        #question-container { 
+            display: none; 
+            margin-top: 20px;
+        }
+        #start-btn, #next-btn { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            margin-top: 20px;
+        }
+        #question {
+            font-size: 2.5em; /* Adjusted to make the question larger */
+            font-weight: bold; /* Makes question text bold */
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Family Quiz</h1>
+        <button id="start-btn">Start Quiz</button>
+        <div id="question-container">
+            <div id="question"></div>
+            <button id="next-btn">Next Question</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
