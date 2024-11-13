@@ -1,4 +1,11 @@
-body { 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Christmas Quiz</title>
+    <style>
+        body { 
     font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
@@ -13,22 +20,30 @@ body {
     padding-top: 200px;
 }
 
-h1, #question-container {
-    max-width: 480px; /* Adjusted width for tighter fit */
+        h1 {
+    font-size: 2.5em; /* Increases the size of the title */
+    max-width: 480px;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
-    margin-left: 10px; /* Nudges content inward to prevent left overlap */
+    margin-left: 10px;
+}
+        #question-container {
+    max-width: 480px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-left: 10px;
+    display: none;
 }
 
-#question-container { 
-    display: none; 
-    margin-top: 20px;
-}
+        #question-container { 
+            display: none; 
+            margin-top: 20px;
 
-#start-btn, #next-btn { 
+        #start-btn, #next-btn { 
     padding: 8px 16px; 
-    font-size: 14px; 
+    font-size: 16px; /* Slightly larger button text */
     margin-top: 15px;
     background-color: #ff4b5c;
     border: none;
@@ -37,12 +52,27 @@ h1, #question-container {
     cursor: pointer;
 }
 
-#start-btn:hover, #next-btn:hover {
+        #start-btn:hover, #next-btn:hover {
     background-color: #ff1f3a;
 }
 
-#question {
-    font-size: 1.8em;
+
+       #question {
+    font-size: 2.2em; /* Larger font size for questions */
     font-weight: bold;
     margin: 20px 0;
 }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Family Christmas Quiz</h1>
+        <button id="start-btn">Start Quiz</button>
+        <div id="question-container">
+            <div id="question"></div>
+            <button id="next-btn">Next Question</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
