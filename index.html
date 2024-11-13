@@ -6,62 +6,52 @@
     <title>Family Christmas Quiz</title>
     <style>
         body { 
-    font-family: Arial, sans-serif; 
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: center; 
-    background: url('https://github.com/lina-alina01/Family-quiz/raw/main/pexels-george-dolgikh-551816-1303090.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    padding-top: 200px;
-}
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Starts content near the top */
+            text-align: center; 
+            background: url('https://github.com/lina-alina01/Family-quiz/raw/main/pexels-george-dolgikh-551816-1303090.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding-top: 200px; /* Adjusts vertical positioning */
+        }
 
-        h1 {
-    font-size: 2.5em; /* Increases the size of the title */
-    max-width: 480px;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.7); 
-    border-radius: 10px;
-    margin-left: 10px;
-}
-        #question-container {
-    max-width: 480px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    margin-left: 10px;
-    display: none;
-}
+        h1, #question-container {
+            max-width: 500px; /* Adjusts width for smaller fit */
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7); /* Adds overlay for readability */
+            border-radius: 10px;
+        }
 
         #question-container { 
             display: none; 
             margin-top: 20px;
+        }
 
         #start-btn, #next-btn { 
-    padding: 8px 16px; 
-    font-size: 16px; /* Slightly larger button text */
-    margin-top: 15px;
-    background-color: #ff4b5c;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-}
+            padding: 8px 16px; 
+            font-size: 14px; 
+            margin-top: 15px;
+            background-color: #ff4b5c;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
         #start-btn:hover, #next-btn:hover {
-    background-color: #ff1f3a;
-}
+            background-color: #ff1f3a;
+        }
 
-
-       #question {
-    font-size: 2.2em; /* Larger font size for questions */
-    font-weight: bold;
-    margin: 20px 0;
-}
+        #question {
+            font-size: 1.8em; /* Smaller font size for questions */
+            font-weight: bold;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -76,3 +66,4 @@
     <script src="quiz.js"></script>
 </body>
 </html>
+
