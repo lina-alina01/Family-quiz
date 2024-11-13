@@ -1,69 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Christmas Quiz</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: flex-start; /* Aligns content to the left */
-            align-items: flex-start; /* Aligns content near the top */
-            text-align: center; 
-            background: url('https://github.com/lina-alina01/Family-quiz/raw/main/pexels-george-dolgikh-551816-1303090.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            padding-top: 200px; /* Vertical positioning */
-        }
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center; 
+    background: url('https://github.com/lina-alina01/Family-quiz/raw/main/pexels-george-dolgikh-551816-1303090.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding-top: 200px;
+}
 
-        h1, #question-container {
-            max-width: 480px;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            margin-left: 10px;
-        }
+h1 {
+    font-size: 2.5em; /* Increases the size of the title */
+    max-width: 480px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    margin-left: 10px;
+}
 
-        #question-container { 
-            display: none; 
-            margin-top: 20px;
-        }
+#question-container {
+    max-width: 480px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-left: 10px;
+    display: none;
+}
 
-        #start-btn, #next-btn { 
-            padding: 8px 16px; 
-            font-size: 16px; 
-            margin-top: 15px;
-            background-color: #ff4b5c;
-            border: none;
-            color: #fff;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+#start-btn, #next-btn { 
+    padding: 8px 16px; 
+    font-size: 16px; /* Slightly larger button text */
+    margin-top: 15px;
+    background-color: #ff4b5c;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        #start-btn:hover, #next-btn:hover {
-            background-color: #ff1f3a;
-        }
+#start-btn:hover, #next-btn:hover {
+    background-color: #ff1f3a;
+}
 
-        #question {
-            font-size: 2.2em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <h1>Family Christmas Quiz</h1>
-        <button id="start-btn">Start Quiz</button>
-        <div id="question-container">
-            <div id="question"></div>
-            <button id="next-btn">Next Question</button>
-        </div>
-    </div>
-    <script src="quiz.js"></script>
-</body>
-</html>
+#question {
+    font-size: 2.2em; /* Larger font size for questions */
+    font-weight: bold;
+    margin: 20px 0;
+}
